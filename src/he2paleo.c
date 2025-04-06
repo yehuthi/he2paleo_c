@@ -15,7 +15,7 @@
 	}
 
 uint32_t he2paleo_scalar_unchecked(uint32_t input) {
-	const uint32_t HE2PALEO_TABLE_16[] = HE2PALEO_TABLE_LITERAL;
+	static const uint32_t HE2PALEO_TABLE_16[] = HE2PALEO_TABLE_LITERAL;
 	return HE2PALEO_TABLE_16[input - 0x05D0];
 }
 
